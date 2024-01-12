@@ -1,5 +1,5 @@
 <template>
-  <div v-if="intento <5 " class="container">
+  <div v-if="intento <5 && puntaje<10" class="container">
     <div class="puntuacion">
       <p>Puntaje: {{ puntaje }}</p>
       <p>Intentos: {{ intento }}</p>
@@ -143,8 +143,8 @@ export default {
   justify-content: center;
 }
 img {
-  height: 400px;
-  widows: 400px;
+  height: 300px;
+  widows: 300px;
 }
 .puntuacion {
   display: flex;
